@@ -1,0 +1,47 @@
+.main-screen {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    @include theme() {
+      color: theme-get("light-theme-colors-text");
+    }
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .note-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    font-size: 13px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @include theme() {
+      background-color: theme-get("light-theme-colors-background");
+      color: theme-get("light-theme-colors-text");
+    }
+
+    .info-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      line-height: 1.5;
+    }
+  }
+
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,17 @@
+.navbar-component {
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+
+    @include theme() {
+      background-color: theme-get("light-theme-colors-navbar-background");
+    }
+
+    .brand-container {
+      cursor: pointer;
+      margin-left: 20px;
+    }
+  }
+}

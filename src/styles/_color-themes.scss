@@ -1,0 +1,28 @@
+@import "./vars";
+
+$themes: (
+  light: (
+    // Global
+    "light-theme-colors-background": $light-theme-colors-background,
+    "light-theme-colors-text": $light-theme-colors-text,
+    // Navbar
+    "light-theme-colors-navbar-background": $light-theme-colors-navbar-background,
+    "light-theme-colors-navbar-bottom-text": $light-theme-colors-navbar-bottom-text,
+    // General colors
+    "light-theme-colors-violet": $light-theme-colors-violet,
+    "light-theme-colors-blue": $light-theme-colors-blue,
+  )
+);
+
+@mixin theme() {
+  @each $theme, $map in $themes {
+    $theme-map: map-get($themes, $theme) !global;
+    .theme-#{$theme} & {
+      @content;
+    }
+  }
+}
+
+@function theme-get($key) {
+  @return map-get($theme-map, $key);
+}
