@@ -18,13 +18,13 @@ To get started with the Qventus Password Library, follow these steps:
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/joaquingirardi/qventus-password-library.git
+git clone https://github.com/joaquingirardi/qventus-password-lib.git
 ```
 
 2. Navigate into the project directory:
 
 ```bash
-cd qventus-password-library
+cd qventus-password-lib
 ```
 
 3. Install dependencies:
