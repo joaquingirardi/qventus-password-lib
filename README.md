@@ -38,8 +38,9 @@ npm install
 ```bash
 npm run app
 ```
-
 5. Open your browser and visit `http://localhost:3000` to view the library.
+
+<img width="296" alt="qventus-app" src="https://github.com/joaquingirardi/qventus-password-lib/assets/71033509/7a469b88-c90b-4457-a404-2fb39e87d685">
 
 ## Customization
 
